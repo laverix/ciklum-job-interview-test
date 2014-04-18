@@ -1,0 +1,23 @@
+<a href="/" class="uk-button uk-button-primary">
+    <i class="uk-icon-arrow-circle-o-left"></i>
+    Go back
+</a>
+<h2>
+    Title: {{ video.title }}
+</h2>
+<p>
+    Game: {{ video.game.name }}
+</p>
+<p>
+   User: {{ video.user.username }}
+</p>
+<a href="https://everyplay.com/videos/{{ video.id }}"
+        target="_blank">
+    <img width="50%"
+         height="auto"
+         class="uk-align-center" src="{{ video.thumbnail_url }}"
+         alt=""/>
+</a>
+
+
+
