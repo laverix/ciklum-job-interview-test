@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Everyplay / Ciklum &mdash; Test Task
+    </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="js/vendors/uikit/dist/css/uikit.css"/>
+    <link rel="stylesheet" href="js/vendors/nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="js/vendors/uikit/dist/css/addons/uikit.addons.min.css"/>
+    <script data-main="js/main" src="js/vendors/requirejs/require.js"></script>
+</head>
+
+<body>
+    <div class="uk-container uk-container-center uk-margin-top">
+        <div ng-include src="'views/navbar.html'"></div>
+        <div ng-view></div>
+        <div ng-include src="'views/footer.html'"></div>
+    </div>
+</body>
+</html>
