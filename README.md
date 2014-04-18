@@ -12,7 +12,10 @@
                                       \______/ |__/                     \______/
 ```
 
-# Everyplay / Ciklum Test Task
+> For simple app - simple requirements.
+
+- Necessary to have server environment like Apache2 etc...
+- Installed Bower package manager
 
 ```
 bower install
