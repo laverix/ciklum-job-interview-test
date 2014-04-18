@@ -1,0 +1,43 @@
+<div class="uk-grid">
+    <div class="uk-button-group">
+        <a href="/" class="uk-button uk-button-primary">
+            All Games
+        </a>
+        <div data-uk-dropdown="{mode:'click'}" class="">
+            <button class="uk-button uk-button-primary">
+                <i class="uk-icon-caret-down"></i>
+            </button>
+            <div class="uk-dropdown uk-dropdown-small">
+                <ul class="uk-nav uk-nav-dropdown">
+                    <li ng-repeat="game in games">
+                        <a ng-click='sortVideos(game.id)'>
+                            {{ game.name }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="uk-grid-divider">
+<div class="uk-grid" data-uk-grid-margin="">
+    <div class="uk-margin-bottom uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"
+         ng-repeat="video in videos">
+        <a class="uk-overlay"
+           style="background-image: url('{{ video.thumbnail_url }}'); height: 150px; width: 350px;"
+           data-uk-tooltip="{pos:'top'}"
+           title="Author: {{ video.user.username }}"
+           href="#video/{{ video.id }}">
+            <div class="uk-overlay-area">
+                <div class="uk-overlay-area-content">
+                    <p>
+                        Title: {{ video.title }}
+                    </p>
+                    <p>
+                        Views: {{ video.views }}
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
