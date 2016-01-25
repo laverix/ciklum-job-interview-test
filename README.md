@@ -16,7 +16,8 @@ The API is a very straight-forward REST API based on JSON, so this should not be
 Get yourself a client_id from signing up at http://developers.everyplay.com/
 (add “Job search candidate” as your company name to avoid our sales spamming you).
 Once you have reversed the API, I want you to create a frontend application as a single­‐page application that allows the user to watch the latest videos from Everyplay.
-They can be filtered by game.When the user clicks the video, it shows the single video and plays the video as a HTML5 video player.
+They can be filtered by game.
+When the user clicks the video, it shows the single video and plays the video as a HTML5 video player.
 ```
 
 ## History
