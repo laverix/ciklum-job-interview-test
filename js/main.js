@@ -1,14 +1,14 @@
 require.config({
-    baseUrl: '/',
+    baseUrl: '',
     paths: {
-        'modules': 'js/modules',
-        'uikit': 'js/vendors/uikit/dist/js/uikit.min',
+        'modules': './js/modules',
+        'uikit': './js/vendors/uikit/js/uikit.min',
 
-        'jquery': 'js/vendors/jquery/dist/jquery.min',
-        'angular': 'js/vendors/angular/angular',
-        'angular-route': 'js/vendors/angular-route/angular-route',
-        'angularAMD': 'js/vendors/angularAMD/angularAMD',
-        'NProgress': 'js/vendors/nprogress/nprogress'
+        'jquery': './js/vendors/jquery/dist/jquery.min',
+        'angular': './js/vendors/angular/angular',
+        'angular-route': './js/vendors/angular-route/angular-route',
+        'angularAMD': './js/vendors/angularAMD/angularAMD',
+        'NProgress': './js/vendors/nprogress/nprogress'
     },
     shim: {
         'uikit': {
@@ -23,8 +23,8 @@ require.config({
     },
     config: {
         "uikit": {
-            "base": "js/vendors/uikit/dist/"
+            "base": "js/vendors/uikit/js/"
         }
     },
-    deps: ['js/app']
+    deps: ['./js/app']
 });

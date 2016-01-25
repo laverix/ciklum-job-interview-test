@@ -24,7 +24,7 @@
     <div class="uk-margin-bottom uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6"
          ng-repeat="video in videos">
         <a class="uk-overlay"
-           style="background-image: url('{{ video.thumbnail_url }}'); height: 150px; width: 350px;"
+           style="background-image: url('{{ video.preview_thumbnail }}'); height: 150px; width: 350px;"
            data-uk-tooltip="{pos:'top'}"
            title="Author: {{ video.user.username }}"
            href="#video/{{ video.id }}">
